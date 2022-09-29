@@ -34,6 +34,11 @@ h1,h2,h3{
 
 
 /* ###### utility class############# */
+.container{
+    max-width: 1200;
+    margin: 0 auto;
+    width:90%;
+}
 .lg-heading{
     font-size:3.5rem;
 
@@ -53,6 +58,12 @@ h1,h2,h3{
 .text-gray{
     color:#555;
 }
+.btn{
+    display:inline-block;
+    padding: 0.5em 1.5em;
+    background-color: azure;
+    font-size: 1.5em;
+}
 
 
 
@@ -61,6 +72,7 @@ h1,h2,h3{
 
 
 .header{
+    position:relative;
     height:95vh;
     background: url("../img/header-image.jpg") ;
     background-position: center;
@@ -95,14 +107,75 @@ h1,h2,h3{
 
 }
 
-.navbar .logo{
+/* .navbar .logo{
     margin-left: 235px;
 }
 .listitems{
     margin-right: 120px;
-}
+} */
 .listitem{
     /* margin-left:50px; */
     margin-top: 1rem;
     padding:1rem
+}
+
+a:hover{
+    border-bottom: 1px solid bisque;
+}
+
+/* ###############Header content styling############### */
+
+.heading-content{
+    position:absolute;
+    /* border:2px solid white; */
+    /* padding:1rem; */
+    /* margin-top: 20rem; */
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+   
+}
+.text-cen{
+    text-align: center;
+
+}
+/* ################### section styling ################# */
+.showcase{
+    background-color: #ddd;
+    padding: 10rem 0;
+}
+.row{
+    height:350px;
+    border:2px solid black
+}
+
+
+.row1 .img-box, .row2 .text-box{
+    float:left;
+    width: 50%;
+}
+.row2 .img-box, .row1 .text-box{
+    float:right;
+    width: 50%;
+}
+
+.row1{
+    margin-bottom:10rem ;
+}
+.img-box{
+    border:2px solid green;
+    height:100%;
+}
+.text-box{
+    border:2px solid gray;
+    width:50%;
+    /* height:100%; */
+    padding:3rem;
+}
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
