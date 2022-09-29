@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+/* #####html element styling########## */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+html{
+    font-size: 62.5%;
+}
+
+ul li{
+    list-style: none;
+    font-size: 1.6rem;
+}
+ul li a{
+    text-decoration: none;
+}
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+}
+h1,h2,h3{
+    margin-bottom: 0.5em;
+}
+
+
+/* ###### utility class############# */
+.lg-heading{
+    font-size:3.5rem;
+
+}
+.md-heading{
+    font-size:2.2rem;
+}
+.text-red{
+    color:#e63946;
+}
+.text-light{
+    color:#f4f4f4;
+}
+.text-black{
+    color:#333333;
+}
+.text-gray{
+    color:#555;
+}
+
+
+
+
+/* ################header styling############### */
+
+
+.header{
+    height:95vh;
+    background: url("../img/header-image.jpg") ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header .navbar .logo,.header .navbar a{
+    color:white;
+ 
+}
+.logo{
+    float:left;
+}
+.header .navbar .listitems{ 
+    
+    float:right;
+}
+.navbar{
+    border: 2px solid green;
+    padding:1rem;
+}
+.navbar::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.navbar .listitem{
+    display: inline-block;
+    
+    
+    /* text-decoration: none; */
+
+}
+
+.navbar .logo{
+    margin-left: 235px;
+}
+.listitems{
+    margin-right: 120px;
+}
+.listitem{
+    /* margin-left:50px; */
+    margin-top: 1rem;
+    padding:1rem
+}
